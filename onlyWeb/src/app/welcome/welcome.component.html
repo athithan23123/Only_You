@@ -1,21 +1,26 @@
-<div class="row" style="justify-content: center;">
+<div class="container-fluid row" style="justify-content: center;">
 
 <mat-card>
     <mat-grid-list cols="1" rowHeight="2:1">
-        <mat-grid-tile>
-            <div style="width: auto;height: auto;">
+        <mat-grid-tile style="width: 100%;height: 100%;">
+            <div >
                 <section >
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                            aria-label="Slide 3"></button> -->
                     </div>
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
+                            <img src="https://cdn.discordapp.com/attachments/920750838857752657/981226620318797834/unknown.png" class="d-block w-100">
+                        </div>
+
+                        <!-- <div class="carousel-item active">
                             <img src="../../assets/Picture/original.png" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
@@ -23,7 +28,7 @@
                         </div>
                         <div class="carousel-item">
                             <img src="../../assets/Picture/RT.jpg" class="d-block w-100">
-                        </div>
+                        </div> -->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
@@ -40,13 +45,25 @@
         </div>
 
         </mat-grid-tile>
-        <mat-grid-tile>2</mat-grid-tile>
+        <!-- <mat-grid-tile>2</mat-grid-tile>
         <mat-grid-tile>3</mat-grid-tile>
-        <mat-grid-tile>4</mat-grid-tile>
+        <mat-grid-tile>4</mat-grid-tile> -->
       </mat-grid-list>
     </mat-card>
 
 
     
 </div>
+<footer>
+    <div class="card text-center">
+        <div class="card-body">
+            <h5 class="card-title" style="font-family: Kanit;font-size: larger;">ความคืบหน้าของเว็บเรา {{this.process}} %</h5>
+            <div style="justify-content: center;">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow=[(this.process)] aria-valuemin="0" aria-valuemax="100" [style.width.%]=[(this.process)]></div>
+                  </div>
+            </div>
+        </div>
+      </div>
+</footer>
 

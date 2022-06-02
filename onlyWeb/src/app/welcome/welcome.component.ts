@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-
+  process = 0;
   constructor() { }
 
   ngOnInit(): void {
+this.process = 15;
   }
+  
 
 }
